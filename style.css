@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Edu NSW ACT Foundation', cursive;
+}
+body{
+  background-color: #f1f1f1;
+}
+
+.myquiz{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 580px;
+  border-radius: 48px;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+  transform: translate(-50%, -50%);
+}
+
+.img img {
+  width: 100%;
+}
+
+.text{
+  width: 90%;
+  margin: auto;
+}
+
+.text h3 {
+  margin-top: 20px;
+}
+
+.mybtn{
+  width: 60%;
+  margin-top: 78px;
+  margin-left: 175px !important;
+}
+.mybtn button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: 0;
+  outline: none;
+  color: #fff;
+  padding: 6px 25px;
+  cursor: pointer;
+  border-radius: 57px 0px 51px 0px;
+  transition: 0.2s ease-in-out;
+}
+
+.mybtn button:hover {
+  background-color: rgb(29, 194, 194)
+}
+
+.rulesbox {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 580px;
+  border-radius: 48px;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rulesbox.activeinfo {
+    opacity: 2;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.img img {
+  width: 100%;
+}
+
+.rulestitle{
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+.ruleslist{
+  width: 67%;
+  margin: auto;
+}
+
+ol li {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+.mybtns button{
+  font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 6px 25px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 180px
+  
+}
+
+.exitbtn{
+  border-radius: 0px 47px 0px 47px;
+}
+.exitbtn:hover{
+  background-color: #222DA5;
+}
+
+
+.continuebtn{
+  border-radius: 51px 0px 57px 0px;
+  margin-left: 82px;
+  
+}
+.continuebtn:hover  {
+  background-color: rgb(29, 194, 194);
+}
+
+.questionbox.activequiz{
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  
+}
+.questionbox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 580px;
+  border-radius: 48px;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.questionsheader{
+  
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 45px;
+}
+
+.questionsheader .title2{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.timecount {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+} 
+
+.seconds{
+  font-size: 18px;
+  font-weight: 500;
+  height: 26px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 26px;
+  text-align: center;
+  background: black;
+  border: 1px solid #A3A4B1;
+  user-select: #1C268F;
+}
+
+.timeline{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #0036B6
+}
+.section{
+  padding: 25px 30px 20px 30px;
+  background: white;
+}
+
+.text2{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.myoption{
+  padding: 20px 0px;
+  display: block;
+}
+
+.options{
+  background: aliceblue;
+  border: 1px solid #84c5fe;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 17px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options:hover{
+  color: #004085;
+  background: #cce5ff;
+    border: 1px solid #84c5fe;
+
+}
+footer{
+  height: 277px;
+  border-top: 1px solid #9699B3;
+    align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalqus{
+  padding-bottom: 10px;
+  padding-left: 10px
+}
+
+footer button{
+   font-size: 20px;
+  font-weight: 600;
+  background-color: tomato;
+  border: 0;
+  outline: none;
+  color: #fff;
+  padding: 6px 25px;
+  cursor: pointer;
+  border-radius: 57px 0px 51px 0px;
+  transition: all 0.3s ease;
+  margin-top: 11px;
+  display: none;
+}
+
+footer button:hover{
+  background: #189BDA;
+ 
+}
+
+.options.correct{
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.options.incorrect{
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.options.disabaled{
+  pointer-events: none;
+}
+
+.questionbox header .timelines{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #007bff;
+}
+
+.resultbox{
+  width: 320px;
+  height: 580px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  flex-direction: column;
+  border-radius: 45px;
+  
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50% scale(0.9));
+  opacity: 0;
+  pointer-events:none;
+}
+
+.resultimg img{
+  width: 100%;
+  height: 170px;
+  margin-bottom: 180px;
+}
+
+.completetext{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.scoretext span{
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.scoretext span p{
+  padding: 0 4px;
+  font-weight: 600;
+}
+
+.resultbox .btn {
+  display: flex;
+  margin: 20px 0;
+}
+
+ .btn button {
+  margin: 0 10px;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.replay{
+  background: tomato;
+  color: #fff;
+}
+.replay:hover{
+  background:  #086CD1;
+}
+.quit{
+  background: tomato;
+  color: #fff;
+}
+.quit:hover{
+  background: red;
+}
+
+.resultbox.activeresult{
+  opacity: 1;
+  pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
